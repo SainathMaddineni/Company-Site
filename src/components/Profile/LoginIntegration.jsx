@@ -21,7 +21,7 @@ function LoginIntegration() {
                 <option>Large</option>
             </Select><br/>
             <FormLabel><strong>Email or Phone Number : </strong></FormLabel>
-            <Input placeholder="Enter Email or Phone" color="black" borderColor="black" /><br /><br />
+            <Input placeholder="Enter Email or Phone" borderColor="black" _placeholder={{color:"black"}} /><br /><br />
             <FormLabel><strong>Vender Ship :</strong> </FormLabel>
                     <FormLabel border="1.5px solid black" borderRadius="10px" width="350px">
                     <label for="file"> 
