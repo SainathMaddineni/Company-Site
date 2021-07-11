@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './App.css';
-import NavBar from './components/navbar';
+// import NavBar from './components/navbar';
 //import SignUp from './components/sign up';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import Home from './components/home';
@@ -20,7 +20,6 @@ function App() {
   return (
     <div>
       <Router>
-        <NavBar/>
       <Switch>
       <Route path="/" exact strict component = {Home}/>
       <Route path="/services" exact strict  component = {Services}/>

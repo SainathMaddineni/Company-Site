@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './service.css';
 import Calendar from 'react-calendar';
+import Navbar from './navbar';
 
 class Service extends Component {
     state = { 
@@ -64,6 +65,7 @@ class Service extends Component {
     render() { 
         return ( 
             <div className = "serviceheading">
+                <Navbar />
                 <hr></hr>
             <div>
                 <h1>Quote the project</h1>

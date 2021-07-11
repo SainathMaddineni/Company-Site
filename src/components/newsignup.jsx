@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './signup.css';
+import Navbar from './navbar';
 
 const mobileRe = new RegExp(/^[0-9]{10}$/);
 const zipcodeRe = new RegExp(/^[0-9]{6}$/);
@@ -197,6 +198,8 @@ class SignUpDemo extends Component {
     render() { 
         return ( 
             <div>
+                        <Navbar/>
+
             <div className="row">
                 <div className="column">
                     <img  className = "signup_img" src="/images/sam2.png"  alt = "img not found"/>

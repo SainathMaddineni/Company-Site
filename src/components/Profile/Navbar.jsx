@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { IconButton } from "@chakra-ui/react"
-import { DragHandleIcon, SearchIcon} from "@chakra-ui/icons"
-import { Menu, MenuButton, MenuList, MenuItem,InputGroup,InputLeftElement } from "@chakra-ui/react"
+import { DragHandleIcon,} from "@chakra-ui/icons"
+import { Menu, MenuButton, MenuList, MenuItem,Box } from "@chakra-ui/react"
 import { ChakraProvider, Flex, theme, Avatar, FormControl, FormLabel, Input } from '@chakra-ui/react';
 
-function Picture(){
+function Navbar(){
     const [image,setimage] = useState(null)
     const handleChange = (e) =>{
         console.log(e)
@@ -12,18 +12,31 @@ function Picture(){
     }
     console.log(image)
         return (
+            
                 <ChakraProvider theme={theme}>
-                        <InputGroup marginLeft="60%">
+                    <Box 
+                     backgroundColor="#75685f"
+                     padding= "18px"
+                     display="flex"
+                     justifyContent="space-between"
+                     paddingRight="50px"
+                     fontSize="32px"
+                     fontWeight="bold"
+                     color="yellow"
+                    >
+                        <h1>Slope Rate Techno Private Limited</h1>
+                        
+                        {/* <InputGroup marginLeft="60%">
                             <InputLeftElement pointerEvents="none" children={<SearchIcon />} />
                             <Input type="text"backgroundColor="white" placeholder="Search.." width="sm"/>
-                        </InputGroup>
-                    <Flex >
+                        </InputGroup> */}
+                    <Flex>
                         <FormControl id="profile">
                             <FormLabel><Avatar src={image} /></FormLabel>
                             <Input type="file" hidden onChange={handleChange} />
                         </FormControl>
                     <Menu>
-                        <MenuButton as={IconButton} aria-label="Options" icon={<DragHandleIcon/>} size="lg" variant="outline" />
+                        <MenuButton as={IconButton} color="white" aria-label="Options" icon={<DragHandleIcon/>} size="lg" variant="outline" />
                             <MenuList>
                                 <MenuItem>Profile</MenuItem>
                                 <MenuItem>Profile Settings</MenuItem>
@@ -32,7 +45,8 @@ function Picture(){
                             </MenuList>
                     </Menu>
                     </Flex>
+                    </Box>
                 </ChakraProvider>
         )
     }
-export default Picture;
+export default Navbar;

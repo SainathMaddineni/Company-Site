@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './login.css';
+import Navbar from './navbar';
+
 //import axios from 'axios';
 //import logInAccount from '../services/login_service';
 //import ForgetPassword from './components/forgetpassword';
@@ -76,6 +78,7 @@ class LogIn extends Component {
     render() { 
         return (
             <div>
+                <Navbar />
                 <div className = "body">
                 <div className ="containerlogin">
                     <div className = "imagebox">

@@ -1,7 +1,7 @@
 import React from "react"
 import { ChakraProvider } from "@chakra-ui/react"
-import Navbar from "./Navbar/Navbar"
-import LoginIntegration from "./LoginIntegration/LoginIntegration"
+import LoginIntegration from "./Profile/LoginIntegration"
+import Navbar from "./Profile/Navbar"
 function LoginIntro() {
         return ( 
             <ChakraProvider>

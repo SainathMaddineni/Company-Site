@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 // import './footer.css';
+import Navbar from './navbar';
 
 class Home extends Component {
     state = {  }
     render() {
         return (
             <div>
+              <Navbar />
             <div>
                 <section id = "showcase">
         <div>

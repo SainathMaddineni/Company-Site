@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './contactus.css';
 //import emailjs from 'emailjs-com';
+import Navbar from './navbar';
+
 
 const mobileRe = new RegExp(/^[0-9]{10}$/);
 const StringRe = new RegExp(/^[a-zA-Z]+$/);
@@ -132,6 +134,7 @@ class ContactUs extends Component {
     render() { 
         return ( 
             <div>
+                <Navbar />
             <div>
                 <img src = "/images/15.jpg"  className = "img1"alt = "img not found"/>
                 <div className = "tbox">
