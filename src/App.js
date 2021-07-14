@@ -2,7 +2,6 @@
 
 import React from 'react';
 import './App.css';
-import NavBar from './components/navbar';
 //import SignUp from './components/sign up';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import Home from './components/home';
@@ -16,13 +15,12 @@ import ForgetPassword from './components/forgetpassword'
 import Service from './components/service';
 import IdleTimerContainer from './components/idleTimerContainer';
 import CarrerControl from './components/carrercontrol';
-
+import LoginIntro from './components/AfterLogin/LoginIntro';
 function App() {
   return (
     <div>
       <IdleTimerContainer></IdleTimerContainer>
       <Router>
-        <NavBar/>
       <Switch>
       <Route path="/" exact strict component = {Home}/>
       <Route path="/services" exact strict  component = {Services}/>
@@ -33,6 +31,7 @@ function App() {
       <Route path="/forgetpassword"  exact strict  component = {ForgetPassword}/>
       <Route path="/service"  exact strict  component = {Service}/>
       <Route path="/carrercontrol"  exact strict  component = {CarrerControl}/>
+      <Route path="/LoginIntro" exact strict component = {LoginIntro}/>
       </Switch>
       </Router>
       <Footer/>

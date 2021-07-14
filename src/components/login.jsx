@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Service from './service'; 
+import NavBar from './navbar';
+
 
 import './login.css';
 //import axios from 'axios';
@@ -99,6 +101,7 @@ class LogIn extends Component {
         return (
            
             <div>
+                <NavBar />
                  {
                     !this.state.login? 
                 <div className = "body">
